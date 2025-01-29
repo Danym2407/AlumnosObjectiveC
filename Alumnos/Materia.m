@@ -9,4 +9,17 @@
 
 @implementation Materia
 
+-(id)initWithNombre:(NSString *)nombre Codigo:(NSString *)codigo {
+    self = [super init];
+    if (self) {
+        _nombre = nombre;
+        _codigo = codigo;
+    }
+    return self;
+}
+
+-(void)Imprimir {
+    NSLog(@"Materia: %@ | Código: %@", _nombre, _codigo);
+}
+
 @end
